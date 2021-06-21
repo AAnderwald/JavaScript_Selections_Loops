@@ -3,10 +3,10 @@ console.log("Hello World!\n==========\n");
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
  //odd using foor loop
-for (let x = 1; x <=100; x++) { //x is equal to one; it's less then or equal to 100, add one to the number then go to the next number
-    if (x % 2 ==1) // if divided by two with a remainder
-    console.log (x) // print out the numbers if there is a remainder
-    else {} // this can be blank because you are only printing out the odd number or just don't put it
+for (let x = 1; x <=100; x++) {     //x is equal to one; it's less then or equal to 100, add one to the number then go to the next number
+    if (x % 2 ==1)                  // if divided by two with a remainder
+    console.log (x)                 // print out the numbers if there is a remainder
+    else {}                         // this can be blank because you are only printing out the odd number or just don't put it
 }
 
 /*
@@ -21,15 +21,17 @@ for (let x = 1; x <=100; x++) { //x is equal to one; it's less then or equal to 
 }
 */
 
+/*
 //even using while loop
 let z = 1;
 
 while (z <=100) {
-    if (z % 2 ==0) { //print out the number if there is not a remainder
+    if (z % 2 ==0) {                   //print out the number if there is not a remainder
         console.log (z); 
     }
     z++;
 }
+*/
 
 /*
 for (let zz = 0; zz <=100; zz +=2) {
@@ -38,24 +40,30 @@ for (let zz = 0; zz <=100; zz +=2) {
 
 */
 
-
+/*
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
 for (let a = 1; a <=100; a++) {
     if (a % 3 ==0)
-    console.log ("FIZZ")
-    else {continue;}    
+    console.log ("FIZZ")   
 }
 
-for (let b = 1; b <=100; b++) {
-    if (b % 5 ==0)
+for (let a = 1; a <=100; a++) {
+    if (a % 5 ==0)
     console.log ("BUZZ")
-    else {continue;}    
 }
 
-for (let c = 1; c <=100; c++) {
-    if (c % 3 && c % 5 ==0)
+for (let a = 1; a <=100; a++) {
+    if (a % 3 && a % 5 ==0)
     console.log ("FIZZBUZZ")
-    else {continue;}    
+}
+*/
+
+//or
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) { console.log ('${i} FIZZBUZZ');}
+    else if (i % 3 == 0) { console.log ('${i} FIZZ');} 
+    else if (i % 5 == 0) { console.log ('${i} BUZZ');}
 }
