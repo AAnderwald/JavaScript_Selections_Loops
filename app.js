@@ -2,20 +2,42 @@ console.log("Hello World!\n==========\n");
 
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
- //odd
+ //odd using foor loop
 for (let x = 1; x <=100; x++) { //x is equal to one; it's less then or equal to 100, add one to the number then go to the next number
     if (x % 2 ==1) // if divided by two with a remainder
     console.log (x) // print out the numbers if there is a remainder
-    else {} // this can be blank because you are only printing out the odd number
+    else {} // this can be blank because you are only printing out the odd number or just don't put it
 }
 
+/*
+ // refractor the code to be more efficient; odd is very other
+ for (let xx = 1; xx <=100; xx += 2) {  //let xx equal one, +=2 mean take the 1 and add two untill hit 100 this will skip all evens without looking at it
+      console.log (xx) 
+}
 
-//even
-for (let z = 1; z <=100; z++) { // varialbe ot z and ++ is increment it
-    if (z % 2 ==0) // remainder of zero
-    console.log (z) //pring out the number if there is not a remainder
-    else {}
-} 
+ // refractor even more the code to be more efficient; odd is very other
+ for (let xx2 = 1; xx2 < 99; xx2 += 2) {  // need to go only to 100 but don't care about 100 so take to 99
+    console.log (xx2) 
+}
+*/
+
+//even using while loop
+let z = 1;
+
+while (z <=100) {
+    if (z % 2 ==0) { //print out the number if there is not a remainder
+        console.log (z); 
+    }
+    z++;
+}
+
+/*
+for (let zz = 0; zz <=100; zz +=2) {
+    console.log(zz);
+}
+
+*/
+
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
